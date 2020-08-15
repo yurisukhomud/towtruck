@@ -1,0 +1,71 @@
+.order {
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        width: 945px;
+        height: auto;
+        right: 51%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+    &__column {
+        flex: 0 1 600px;
+    }
+
+    &__form-order {
+        margin: 30px 0 0 0;
+    }
+
+    &__contact {
+        margin: 30px 0 0 0;
+    }
+
+    &__label {
+        display: block;
+        @include regular;
+        font-size: 24px;
+        line-height: 150%;
+        color: $dark;
+    }
+
+    &__phone {
+        position: relative;
+        margin: 18px 0 0 0;
+        @include black;
+        font-size: 46px;
+        line-height: 130%;
+        letter-spacing: -2%;
+        color: $black;
+        text-decoration: none;
+        z-index: 10;
+
+        &:after {
+            content: '';
+            width: 0;
+            height: 8px;
+            background-color: $yellow;
+    
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            z-index: -1;
+    
+            transition: width .2s linear;
+
+        }
+
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}

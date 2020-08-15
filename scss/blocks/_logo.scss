@@ -1,0 +1,36 @@
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__icon {
+        display: block;
+        width: 140px;
+        height: 60px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 0 0 30px;
+    }
+
+    &__title {
+        @include black;
+        font-size: 27px;
+        line-height: 130%;
+
+        color: $yellow;
+    }
+
+    &__subtitle {
+        margin: 3px 0 0 0;
+
+        @include medium;
+        font-size: 17px;
+        line-height: 130%;
+
+        color: $white;
+    }
+}

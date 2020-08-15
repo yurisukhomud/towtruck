@@ -1,0 +1,30 @@
+.advantages {
+    display: flex;
+    margin: 0px -15px 0 -15px;
+    
+    &__item {
+        padding: 0px 15px 0px 15px;
+        flex: 0 1 25.000%;
+    }
+
+    &__number {
+        @include black;
+        font-size: 72px;
+        line-height: 100%;
+        color: $yellow;
+    }
+
+    &__descr {
+        margin: 0 0 0 -10px;
+        @include regular;
+        font-size: 26px;
+        color: $dark;
+    }
+
+    &__title {
+        margin: 5px 0 0 0;
+        @include black;
+        font-size: 24px;
+        line-height: 130%;
+    }
+}

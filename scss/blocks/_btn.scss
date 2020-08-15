@@ -1,0 +1,50 @@
+.btn {
+    display: block;
+    padding: 0;
+
+    border: 0;
+    background: none;
+
+    @include black;
+    font-size: 19px;
+    line-height: 130%;
+    color: $black;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+    
+    &--stroke {
+        @include medium;
+        font-size: 17px;
+        color: $yellow;
+    }
+
+    &--intro {
+        display: inline-block;
+        min-height: 70px;
+        min-width: 317px;
+        padding: 22px 50px 23px 50px;
+        background-color: $yellow;
+        color: $black;
+    }
+
+    &--card {
+        width: 100%;
+        min-height: 70px;
+        padding: 22px 50px 23px 50px;
+        background-color: $yellow;
+        color: $black;
+    }
+
+    &--submit {
+        width: 100%;
+        min-height: 80px;
+        font-size: 24px;
+        background-color: $yellow;
+    }
+
+}

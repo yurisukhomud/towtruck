@@ -1,0 +1,44 @@
+.footer {
+    padding: 70px 0 70px 0;
+    background: $black;
+
+    &__inner {
+        display: flex;
+        margin: 0px -15px 0 -15px;
+    }
+
+    &__item {
+        padding: 0 15px 0 15px;
+        flex: 0 1 50%;
+        display: flex;
+
+        &--1 {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__copyright {
+        @include regular;
+        font-size: 17px;
+        line-height: 130%;
+        color: $gray;
+    }
+
+    &__dev {
+        margin: 5px 0 0 0;
+        @include regular;
+        font-size: 17px;
+        line-height: 130%;
+        color: $gray;
+        
+        a {
+            text-decoration: none;
+            color: $gray;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

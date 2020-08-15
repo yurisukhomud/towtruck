@@ -1,0 +1,14 @@
+@mixin regular {
+	font-family: 'Gotham Pro', sans-serif;
+	font-weight: normal;
+}
+
+@mixin medium {
+	font-family: 'Gotham Pro', sans-serif;
+	font-weight: 500;
+}
+
+@mixin black {
+	font-family: 'Gotham Pro', sans-serif;
+	font-weight: 900;
+}

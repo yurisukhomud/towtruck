@@ -1,0 +1,151 @@
+.slick {
+    &-list {
+        overflow: hidden;
+    }
+
+    &-track{
+        display: flex;
+    }
+}
+
+.slider-small {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    &__item {
+        flex: 0 1 248px;
+        max-height: 115px;
+        position: relative;
+        overflow: hidden;
+        padding: 0 5px 0 5px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        top: 0;
+        left: 0;
+    }
+    
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .slick {
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+            border: none;
+
+            transition: background 0.2s linear;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-prev {
+            left: 0;
+            background: rgba($black, 0.8) url('../images/icons/arrow-l-gray.svg') center / 40px no-repeat;
+
+            &:hover {
+                background: $yellow url('../images/icons/arrow-l.svg') center / 40px no-repeat;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-next  {
+            right: 0;
+            background: rgba($black, 0.8) url('../images/icons/arrow-r-gray.svg') center / 40px no-repeat;
+
+            &:hover {
+                background: $yellow url('../images/icons/arrow-r.svg') center / 40px no-repeat;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                margin: 0 10px 0 10px;
+
+            }
+
+            button {
+                font-size: 0;
+                width: 15px;
+                height: 15px;
+                background-color: $white;
+                border-radius: 50%;
+                border: 0;
+            }
+
+            .slick-active button {
+                background-color: $yellow;
+
+                &:focus {
+                    outline: none
+                }
+            }
+        }
+
+        &-slide {
+
+            img {
+                cursor: pointer;
+
+            }
+
+            &:focus {
+                outline: none
+            }
+        }
+
+        &-current {
+            img {
+                border: 4px solid $yellow;
+            }
+        }
+    }
+}
+
+.slider-big {
+    display: flex;
+    
+    &__item {
+        max-height: 600px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        top: 0;
+        left: 0;
+    }
+}

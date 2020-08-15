@@ -1,0 +1,76 @@
+@import "base/vars";
+@import "base/mixins";
+@import "base/helpers";
+// @import "base/fonts";
+
+body {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 19px;
+    line-height: 150%;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+span {
+    margin: 0;
+}
+
+p {
+    margin: 0
+
+    // + p {
+    //     margin-bottom: 20px;
+    // }
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+textarea {
+    resize:none;
+    padding: 0px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0 120px 0;
+}
+
+
+/* blocks */
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/services";
+@import "blocks/advantages";
+@import "blocks/title";
+@import "blocks/card";
+@import "blocks/gallery";
+@import "blocks/slick-slider";
+@import "blocks/questions";
+@import "blocks/order";
+@import "blocks/forms";
+@import "blocks/footer";
+
+/* media */
+@import "base/media992";
+@import "base/media768";
+@import "base/media540";
+@import "base/media320";
+

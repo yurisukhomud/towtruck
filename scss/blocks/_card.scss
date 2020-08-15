@@ -1,0 +1,58 @@
+.card {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEEEEE;
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 30px 30px 20px 30px;
+    }
+
+    &__title {
+        @include black;
+        font-size: 36px;
+        line-height: 130%;
+        color: $black;
+    }
+
+    &__descr {
+        margin: 10px 0 0 0;
+        font-size: 19px;
+        line-height: 150%;
+        color: $dark;
+    }
+    
+    &__footer {
+        position: relative;
+        padding: 25px 30px 30px 30px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 330px;
+            height: 1px;
+            background-color: #EEEEEE;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__price {
+        display: block;
+        @include black;
+        font-size: 36px;
+        line-height: 130%;
+    }
+
+    &__btn {
+        margin: 25px 0 0 0;
+    }
+}

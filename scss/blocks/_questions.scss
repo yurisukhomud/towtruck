@@ -1,0 +1,54 @@
+.questions {
+    padding-bottom: 42px;
+    overflow: hidden;
+
+    &__inner {
+        position: relative;
+        margin: 70px 0 0 0;
+    }
+
+    &__info {
+        max-width: 705px;
+    }
+
+    &__item {
+        display: flex;
+
+        &:nth-child(n+2) {
+            margin: 20px 0 0 0;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 75px;
+        height: 75px;
+    }
+
+    &__text {
+        margin: 14px 0 0 30px;
+        @include black;
+        font-size: 36px;
+        line-height: 130%;
+        color: $black;
+    }
+
+    &__example {
+        display: block;
+        margin: 10px 0 0 0;
+        @include regular; 
+        font-size: 19px;
+        line-height: 150%;
+        color: $dark;
+    }
+
+    &__img {
+        position: absolute;
+        width: 700px;
+        height: auto;
+        left: 57%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}

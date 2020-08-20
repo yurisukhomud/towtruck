@@ -1,12 +1,17 @@
 .logo {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 
     &__icon {
-        display: block;
         width: 140px;
         height: 60px;
+        
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
     }
 
     &__text {
@@ -17,6 +22,9 @@
     }
 
     &__title {
+        display: inline-block;
+        margin: 0;
+
         @include black;
         font-size: 27px;
         line-height: 130%;
@@ -25,7 +33,8 @@
     }
 
     &__subtitle {
-        margin: 3px 0 0 0;
+        display: inline-block;
+        margin: 0;
 
         @include medium;
         font-size: 17px;

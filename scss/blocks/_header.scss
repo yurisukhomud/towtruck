@@ -8,46 +8,41 @@
         align-items: center;
     }
 
-    &__contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
+    // &__phone {
+    //     position: relative;
+    //     z-index: 10;
 
-    &__phone {
-        position: relative;
-        @include black;
-        font-size: 27px;
-        line-height: 130%; 
-        letter-spacing: -2%;
+    //     @include black;
+    //     font-size: 27px;
+    //     line-height: 130%; 
+    //     letter-spacing: -2%;
+    //     text-decoration: none;
 
-        color: $white;
-        text-decoration: none;
-        z-index: 10;
+    //     color: $white;
 
-        &:after {
-            content: '';
-            width: 0;
-            height: 8px;
-            background-color: $yellow;
+    //     &:after {
+    //         content: '';
+
+    //         width: 0;
+    //         height: 8px;
     
-            position: absolute;
-            bottom: 4px;
-            left: 0;
-            z-index: -1;
-    
-            transition: width .2s linear;
+    //         position: absolute;
+    //         left: 0;
+    //         bottom: 4px;
+    //         z-index: -1;
 
-        }
+    //         background-color: $yellow;
+    //         transition: width 0.2s linear;
+    //     }
 
-        &:hover {
-            &:after {
-                width: 100%;
-            }
-        }
-    }
+    //     &:hover {
+    //         &:after {
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 
-    &__btn {
-        margin: 3px 0 0 0;
-    }
+    // &__btn {
+    //     margin: 3px 0 0 0;
+    // }
 }

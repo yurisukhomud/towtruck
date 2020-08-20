@@ -1,7 +1,8 @@
 .card {
-    max-width: 390px;
     display: flex;
     flex-direction: column;
+
+    max-width: 390px;
     border: 1px solid #EEEEEE;
 
     &__img {
@@ -19,37 +20,57 @@
         @include black;
         font-size: 36px;
         line-height: 130%;
+
         color: $black;
+
+        a {
+            text-decoration: none;
+            color: $black;
+
+            &:hover {
+                color: $yellow;
+                transition: color .15s ease;
+            }
+        }
     }
 
     &__descr {
         margin: 10px 0 0 0;
+
         font-size: 19px;
         line-height: 150%;
+
         color: $dark;
     }
     
     &__footer {
-        position: relative;
         padding: 25px 30px 30px 30px;
+        position: relative;
 
         &::after {
-            position: absolute;
             content: '';
+
             width: 330px;
             height: 1px;
-            background-color: #EEEEEE;
-            top: 0;
+
+            position: absolute;
             left: 50%;
+            top: 0;
+
+            background-color: #EEEEEE;
+
             transform: translateX(-50%);
         }
     }
 
     &__price {
         display: block;
+        
         @include black;
         font-size: 36px;
         line-height: 130%;
+
+        color: $black;
     }
 
     &__btn {

@@ -23,19 +23,37 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+
                 <div class="logo header__logo">
                     <div class="logo__icon">
-                        <img src="./images/icons/logo.svg" alt="Логотип компанії Евакуатор Рівне - цілодобовий евакуатор" class="img">
+                        <img src="./images/icons/logo.svg" alt="Логотип компанії Евакуатор Рівне - цілодобовий евакуатор">
                     </div>
                     <div class="logo__text">
                         <span class="logo__title">Евакуатор Рівне</span>
                         <span class="logo__subtitle">цілодобовий евакуатор</span>
                     </div>
                 </div>
-                <div class="header__contacts">
+
+                <div class="phones header__phones">
+                    <div class="phones__item">
+                        <img src="./images/icons/kyivstar.svg" alt="" class="phones__icon">
+                        <a href="tel:+380969933769" class="phones__link">(096) 993-37-69</a>
+                    </div>
+                    <div class="phones__item">
+                        <img src="./images/icons/vodafone.svg" alt="" class="phones__icon">
+                        <a href="tel:+380954644486" class="phones__link">(095) 464-44-86</a>
+                    </div>
+                    <div class="phones__item">
+                        <img src="./images/icons/lifecell.svg" alt="" class="phones__icon">
+                        <a href="tel:+380933319363" class="phones__link">(093) 331-93-63</a>
+                    </div>
+                </div>
+
+                <!-- <div class="header__contacts">
                     <a href="tel:+38063..." class="header__phone">+38 (063) 380-62-47</a>
                     <button class="btn header__btn btn--stroke">Замовити зворотній дзвінок</button>
-                </div>
+                </div> -->
+
             </div>
         </div><!-- /container -->
     </header><!-- /header -->
@@ -48,9 +66,13 @@
                     <div class="intro__offer">
                         <h1 class="intro__title">Евакуатор - маніпулятор цілодобово в&#160;Рівному</h1>
                         <div class="intro__subtitle">
-                            <p>Прибудемо через 30 хвилин&#160;або зробимо все — <span>безкоштовно</span></p>
+                            <p>
+                                Прибудемо через 30 хвилин в межах міста або зробимо все — 
+                                <span>безкоштовно</span>
+                            </p>
                         </div>
-                        <button class="btn intro__btn btn--intro">Викликати евакуатор</button>
+                        <a href="tel:+380969933769" class="btn intro__btn btn--intro">Викликати евакуатор</a>
+                        <!-- <button class="btn intro__btn btn--intro">Викликати евакуатор</button> -->
                     </div>
                     <img src="./images/intro.png" alt="Евакуатор Рівне - цілодобовий евакуатор" class="intro__img">
                 </div>
@@ -83,11 +105,11 @@
                 </div>
             </div><!-- /advantages -->
             
-            <h2 class="title services__title">Евакуація автомобілів різного типу</h2>
-            <span class="subtitle services__subtitle">Перевезем все! Від мотоцикла до камаза!</span>
+            <h2 class="title services__title services__title--1">Евакуація автомобілів різного типу</h2>
+            <span class="subtitle services__subtitle services__title--1">Перевезем все! Від мотоцикла до камаза!</span>
 
-            <!-- services__inner -->
-            <div class="services__inner">
+            <!-- services__inner--1 -->
+            <div class="services__inner services__inner--1">
 
                 <div class="services__column">
                     <div class="card">
@@ -95,12 +117,14 @@
                             <img src="./images/card_01.jpg" alt="Евакувація легкових автомобілів в Рівному" class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Легкові автомобілі</h3>
+                            <h3 class="card__title"><a href="#">Легкові автомобілі</a></h3>
                             <p class="card__descr">Автомобілі призначені для перевезень місткістю до 8 осіб</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">від 400 грн.</span>
-                            <button class="btn card__btn btn--card">Замовити евакуацію</button>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
+
+                            <!-- <button class="btn card__btn btn--card">Замовити евакуацію</button> -->
                         </div>
                     </div>
                 </div>
@@ -111,12 +135,14 @@
                             <img src="./images/card_02.jpg" alt="Евакувація Паркетників та кроссоверів в Рівному" class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Паркетники та&#160;кроссовери</h3>
+                            <h3 class="card__title">
+                                <a href="#">Паркетники та&#160;кроссовери</a>
+                            </h3>
                             <p class="card__descr">Зовнішньо виглядає як джип, але&#160;має лише передній привід</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">від 400 грн.</span>
-                            <button class="btn card__btn btn--card">Замовити евакуацію</button>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
                         </div>
                     </div>
                 </div>
@@ -127,12 +153,14 @@
                             <img src="./images/card_03.jpg" alt="Евакувація малолітражних автомобілів в Рівному" class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Малолітражні автомобілі</h3>
+                            <h3 class="card__title">
+                                <a href="#">Малолітражні автомобілі</a>
+                            </h3>
                             <p class="card__descr">Компактні автомобілі з об'ємом двигуна до 1,4 літра</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">від 400 грн.</span>
-                            <button class="btn card__btn btn--card">Замовити евакуацію</button>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
                         </div>
                     </div>
                 </div>
@@ -143,12 +171,14 @@
                             <img src="./images/card_04.jpg" alt="Евакувація Мікроавтобусів, газелей та інших автомобілів в Рівному" class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Мікроавтобуси, газелі&#160;та&#160;інше</h3>
+                            <h3 class="card__title">
+                                <a href="#">Мікроавтобуси, газелі&#160;та&#160;інше</a>
+                            </h3>
                             <p class="card__descr">Автомобіль з кузовом вагонного типу, з місткістю до 15 чоловік</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">від 400 грн.</span>
-                            <button class="btn card__btn btn--card">Замовити евакуацію</button>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
                         </div>
                     </div>
                 </div>
@@ -159,12 +189,14 @@
                             <img src="./images/card_05.jpg" alt="Евакувація Мотоциклів та квадроциклів в Рівному" class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Мотоцикли та&#160;квадроцикли</h3>
+                            <h3 class="card__title">
+                                <a href="#">Мотоцикли та&#160;квадроцикли</a>
+                            </h3>
                             <p class="card__descr">2-х та 4-х колесний транспорт з&#160;відкритим кузовом</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">від 400 грн.</span>
-                            <button class="btn card__btn btn--card">Замовити евакуацію</button>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
                         </div>
                     </div>
                 </div>
@@ -175,17 +207,82 @@
                             <img src="./images/card_06.jpg" alt="Евакувація Спецтехніки різного типу в Рівному" class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title">Спецтехніка різного&#160;типу</h3>
+                            <h3 class="card__title">
+                                <a href="#">Спецтехніка різного&#160;типу</a>
+                            </h3>
                             <p class="card__descr">Техніка призначена для&#160;виконання певних завдань</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">від 400 грн.</span>
-                            <button class="btn card__btn btn--card">Замовити евакуацію</button>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
                         </div>
                     </div>
                 </div>
 
-            </div><!-- /services__inner -->
+            </div><!-- /.services__inner--1 -->
+
+            <h2 class="title services__title services__title--2">Послуги вантажних перевезень</h2>
+            <span class="subtitle services__subtitle services__subtitle--2">Перевезення габаритних вантажів по місту Рівне та за його межі</span>
+
+            <!-- services__inner--2 -->
+            <div class="services__inner services__inner--2">
+
+                <div class="services__column">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./images/card_07.jpg" alt="Перевезення вантажів різного типу в Рівному" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">
+                                <a href="#">Вантажі різного&#160;типу</a>
+                            </h3>
+                            <p class="card__descr">Перевезення вантажу по місту та&#160;за&#160;межі вагою вiд 2 до 10 тонн</p>
+                        </div>
+                        <div class="card__footer">
+                            <span class="card__price">від 400 грн.</span>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__column">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./images/card_08.jpg" alt="Перевезення будівельних матеріалів в Рівному" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">
+                                <a href="#">Будівельні матеріали</a>
+                            </h3>
+                            <p class="card__descr">Перевезення цегли, бруківки та&#160;інших будівельних матеріалів</p>
+                        </div>
+                        <div class="card__footer">
+                            <span class="card__price">від 400 грн.</span>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services__column">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./images/card_09.jpg" alt="Перевезення металоконструкцій в Рівному" class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">
+                                <a href="#">Метало-конструкції</a>
+                            </h3>
+                            <p class="card__descr">Надаємо послуги перевезення металу та металоконструкцій</p>
+                        </div>
+                        <div class="card__footer">
+                            <span class="card__price">від 400 грн.</span>
+                            <a href="tel:+380969933769" class="btn card__btn btn--card">Замовити евакуацію</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.services__inner -->
+            
         </div><!-- /container -->
     </section><!-- /services -->
 
@@ -315,7 +412,22 @@
 
                     <div class="order__contact">
                         <span class="order__label">або зателефонуйте на наш номер</span>
-                        <a href="tel:+38063..." class="order__phone">+38 (063) 380-62-47</a>
+
+                        <div class="phones order__phones phones--order">
+                            <div class="phones__item">
+                                <img src="./images/icons/kyivstar.svg" alt="" class="phones__icon">
+                                <a href="tel:+380969933769" class="phones__link">(096) 993-37-69</a>
+                            </div>
+                            <div class="phones__item">
+                                <img src="./images/icons/vodafone.svg" alt="" class="phones__icon">
+                                <a href="tel:+380954644486" class="phones__link">(095) 464-44-86</a>
+                            </div>
+                            <div class="phones__item">
+                                <img src="./images/icons/lifecell.svg" alt="" class="phones__icon">
+                                <a href="tel:+380933319363" class="phones__link">(093) 331-93-63</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div><!-- /order__inner -->
@@ -336,7 +448,7 @@
                 <div class="footer__item footer__item--2">
                     <div class="logo">
                         <div class="logo__icon">
-                            <img src="./images/icons/logo.svg" alt="Логотип компанії Евакуатор Рівне - цілодобовий евакуатор" class="img">
+                            <img src="./images/icons/logo.svg" alt="Логотип компанії Евакуатор Рівне - цілодобовий евакуатор">
                         </div>
                         <div class="logo__text">
                             <span class="logo__title">Евакуатор Рівне</span>

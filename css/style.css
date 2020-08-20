@@ -1,14 +1,8 @@
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
+  margin: 0;
   font-family: 'Gotham Pro', sans-serif;
   font-size: 19px;
   line-height: 150%;
-  margin: 0;
 }
 
 *, *:before, *:after {
@@ -28,7 +22,10 @@ p {
   margin: 0;
 }
 
-input[type=text], input[type=email], input[type=tel], textarea {
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -67,52 +64,6 @@ textarea {
           align-items: center;
 }
 
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.header__phone {
-  position: relative;
-  font-family: 'Gotham Pro', sans-serif;
-  font-weight: 900;
-  font-size: 27px;
-  line-height: 130%;
-  letter-spacing: -2%;
-  color: #ffffff;
-  text-decoration: none;
-  z-index: 10;
-}
-
-.header__phone:after {
-  content: '';
-  width: 0;
-  height: 8px;
-  background-color: #F4BB26;
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: width .2s linear;
-  transition: width .2s linear;
-}
-
-.header__phone:hover:after {
-  width: 100%;
-}
-
-.header__btn {
-  margin: 3px 0 0 0;
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,15 +71,20 @@ textarea {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .logo__icon {
-  display: block;
   width: 140px;
   height: 60px;
+}
+
+.logo__icon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo__text {
@@ -143,6 +99,8 @@ textarea {
 }
 
 .logo__title {
+  display: inline-block;
+  margin: 0;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: 900;
   font-size: 27px;
@@ -151,12 +109,102 @@ textarea {
 }
 
 .logo__subtitle {
-  margin: 3px 0 0 0;
+  display: inline-block;
+  margin: 0;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 130%;
   color: #ffffff;
+}
+
+.phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.phones__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 30px;
+}
+
+.phones__item:first-child {
+  margin: 0;
+}
+
+.phones__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.phones__link {
+  display: inline-block;
+  margin: 0 0 2px 10px;
+  position: relative;
+  z-index: 10;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 130%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.phones__link:after {
+  content: '';
+  width: 0;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  z-index: -1;
+  background-color: #F4BB26;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
+.phones__link:hover:after {
+  width: 100%;
+}
+
+.phones--order {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phones--order .phones__item {
+  margin: 20px 0 0 0;
+}
+
+.phones--order .phones__link {
+  font-size: 30px;
+}
+
+.phones--order .phones__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.phones--order .phones__link {
+  margin: 0 0 4px 10px;
+  color: #1A1A1A;
+}
+
+.phones--order .phones__link:after {
+  height: 8px;
+  bottom: 5px;
 }
 
 .intro {
@@ -165,8 +213,8 @@ textarea {
   display: flex;
   min-height: 770px;
   padding: 100px 0 0 0;
-  background-color: #1A1A1A;
   overflow: hidden;
+  background-color: #1A1A1A;
 }
 
 .intro__inner {
@@ -178,8 +226,6 @@ textarea {
 
 .intro__offer {
   max-width: 870px;
-  margin: 0;
-  margin-bottom: auto;
 }
 
 .intro__title {
@@ -191,12 +237,13 @@ textarea {
 }
 
 .intro__subtitle {
+  max-width: 540px;
   margin: 20px 0 0 0;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 150%;
-  color: #999999;
+  color: #ffffff;
 }
 
 .intro__subtitle span {
@@ -210,10 +257,10 @@ textarea {
 }
 
 .intro__img {
-  position: absolute;
   width: 1399px;
   height: auto;
-  left: 15%;
+  position: absolute;
+  left: 10%;
   bottom: 0;
   z-index: -1;
 }
@@ -222,13 +269,14 @@ textarea {
   display: block;
   padding: 0;
   border: 0;
-  background: none;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: 900;
   font-size: 19px;
   line-height: 130%;
-  color: #1A1A1A;
   text-decoration: none;
+  text-align: center;
+  color: #1A1A1A;
+  background-color: #F4BB26;
   cursor: pointer;
 }
 
@@ -236,19 +284,11 @@ textarea {
   outline: none;
 }
 
-.btn--stroke {
-  font-family: 'Gotham Pro', sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  color: #F4BB26;
-}
-
 .btn--intro {
   display: inline-block;
   min-height: 70px;
   min-width: 317px;
   padding: 22px 50px 23px 50px;
-  background-color: #F4BB26;
   color: #1A1A1A;
 }
 
@@ -256,7 +296,6 @@ textarea {
   width: 100%;
   min-height: 70px;
   padding: 22px 50px 23px 50px;
-  background-color: #F4BB26;
   color: #1A1A1A;
 }
 
@@ -264,7 +303,6 @@ textarea {
   width: 100%;
   min-height: 80px;
   font-size: 24px;
-  background-color: #F4BB26;
 }
 
 .services__title {
@@ -281,13 +319,13 @@ textarea {
 }
 
 .services__column {
-  padding: 0 15px 0 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.3333%;
-          flex: 0 0 33.3333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333%;
+          flex: 0 0 33.3333%;
+  padding: 0 15px 0 15px;
 }
 
 .services__column:nth-child(n+4) {
@@ -302,10 +340,10 @@ textarea {
 }
 
 .advantages__item {
-  padding: 0px 15px 0px 15px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25.000%;
           flex: 0 1 25.000%;
+  padding: 0px 15px 0px 15px;
 }
 
 .advantages__number {
@@ -335,23 +373,23 @@ textarea {
 .title {
   display: inline-block;
   position: relative;
+  z-index: 10;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
   color: #1A1A1A;
-  z-index: 100;
 }
 
 .title::after {
   content: '';
   width: 100%;
   height: 8px;
-  background-color: #F4BB26;
   position: absolute;
-  bottom: 9px;
   left: 0;
+  bottom: 9px;
   z-index: -1;
+  background-color: #F4BB26;
 }
 
 .title--white {
@@ -366,11 +404,11 @@ textarea {
   content: '';
   width: 90%;
   height: 8px;
-  background-color: #F4BB26;
   position: absolute;
-  bottom: 69px;
   left: 0;
+  bottom: 69px;
   z-index: -1;
+  background-color: #F4BB26;
 }
 
 .subtitle {
@@ -390,7 +428,6 @@ textarea {
 }
 
 .card {
-  max-width: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,6 +435,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 390px;
   border: 1px solid #EEEEEE;
 }
 
@@ -422,6 +460,17 @@ textarea {
   color: #1A1A1A;
 }
 
+.card__title a {
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.card__title a:hover {
+  color: #F4BB26;
+  -webkit-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
 .card__descr {
   margin: 10px 0 0 0;
   font-size: 19px;
@@ -430,18 +479,18 @@ textarea {
 }
 
 .card__footer {
-  position: relative;
   padding: 25px 30px 30px 30px;
+  position: relative;
 }
 
 .card__footer::after {
-  position: absolute;
   content: '';
   width: 330px;
   height: 1px;
-  background-color: #EEEEEE;
-  top: 0;
+  position: absolute;
   left: 50%;
+  top: 0;
+  background-color: #EEEEEE;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -452,6 +501,7 @@ textarea {
   font-weight: 900;
   font-size: 36px;
   line-height: 130%;
+  color: #1A1A1A;
 }
 
 .card__btn {
@@ -481,13 +531,13 @@ textarea {
 }
 
 .slider-small {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: relative;
 }
 
 .slider-small__item {
@@ -495,20 +545,20 @@ textarea {
       -ms-flex: 0 1 248px;
           flex: 0 1 248px;
   max-height: 115px;
+  padding: 0 5px 0 5px;
   position: relative;
   overflow: hidden;
-  padding: 0 5px 0 5px;
 }
 
 .slider-small__img {
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  top: 0;
-  left: 0;
 }
 
 .slider-small__img {
@@ -521,16 +571,16 @@ textarea {
 }
 
 .slider-small .slick-arrow {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 10;
-  font-size: 0;
   width: 50px;
   height: 50px;
   border-radius: 0;
   border: none;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
@@ -569,26 +619,26 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider-small .slick-dots li {
-  list-style: none;
   margin: 0 10px 0 10px;
+  list-style: none;
 }
 
 .slider-small .slick-dots button {
-  font-size: 0;
   width: 15px;
   height: 15px;
-  background-color: #ffffff;
   border-radius: 50%;
   border: 0;
+  font-size: 0;
+  background-color: #ffffff;
 }
 
 .slider-small .slick-dots .slick-active button {
@@ -626,12 +676,12 @@ textarea {
 .slider-big__img {
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  top: 0;
-  left: 0;
 }
 
 .questions {
@@ -640,8 +690,8 @@ textarea {
 }
 
 .questions__inner {
-  position: relative;
   margin: 70px 0 0 0;
+  position: relative;
 }
 
 .questions__info {
@@ -684,14 +734,14 @@ textarea {
 }
 
 .questions__img {
-  position: absolute;
   width: 700px;
   height: auto;
+  position: absolute;
   left: 57%;
   top: 50%;
+  z-index: -1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: -1;
 }
 
 .order__inner {
@@ -705,14 +755,14 @@ textarea {
 }
 
 .order__img {
-  position: absolute;
   width: 945px;
   height: auto;
+  position: absolute;
   right: 51%;
   top: 50%;
+  z-index: -1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: -1;
 }
 
 .order__column {
@@ -738,56 +788,26 @@ textarea {
   color: #454545;
 }
 
-.order__phone {
-  position: relative;
-  margin: 18px 0 0 0;
-  font-family: 'Gotham Pro', sans-serif;
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 130%;
-  letter-spacing: -2%;
-  color: #1A1A1A;
-  text-decoration: none;
-  z-index: 10;
-}
-
-.order__phone:after {
-  content: '';
-  width: 0;
-  height: 8px;
-  background-color: #F4BB26;
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: width .2s linear;
-  transition: width .2s linear;
-}
-
-.order__phone:hover:after {
-  width: 100%;
-}
-
 .input {
-  margin: 10px 0 0 0;
   display: block;
   width: 100%;
   height: 70px;
+  margin: 10px 0 0 0;
   padding: 22px 20px 23px 20px;
+  border-radius: 0;
+  border: 1px solid #ccc;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: normal;
   font-size: 19px;
   line-height: 130%;
-  border-radius: 0;
-  border: 1px solid #ccc;
-  -webkit-transition: 0.2s border;
-  transition: 0.2s border;
+  -webkit-transition: 0.2s border linear;
+  transition: 0.2s border linear;
 }
 
 .input:focus {
-  outline: none;
-  color: #1A1A1A;
   border: 1px solid #F4BB26;
+  color: #1A1A1A;
+  outline: none;
 }
 
 .form-order {
@@ -823,13 +843,13 @@ textarea {
 }
 
 .footer__item {
-  padding: 0 15px 0 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 15px 0 15px;
 }
 
 .footer__item--1 {
@@ -899,8 +919,8 @@ textarea {
     font-size: 14px;
   }
   .btn--intro {
-    min-height: 55px;
     min-width: 250px;
+    min-height: 55px;
     padding: 17px 40px 18px 40px;
   }
   .btn--card {
@@ -911,11 +931,15 @@ textarea {
     min-height: 62px;
     font-size: 19px;
   }
+  .input {
+    height: 60px;
+    margin: 8px 0 0 0;
+    padding: 17px 15px 18px 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
   .header {
     padding: 20px 0 20px 0;
-  }
-  .header__phone {
-    font-size: 21px;
   }
   .logo__icon {
     width: 110px;
@@ -930,6 +954,16 @@ textarea {
   .logo__subtitle {
     font-size: 14px;
   }
+  .phones__item {
+    margin: 0 0 0 20px;
+  }
+  .phones__icon {
+    width: 25px;
+    height: 25px;
+  }
+  .phones__link {
+    font-size: 17px;
+  }
   .intro {
     min-height: 600px;
     padding: 80px 0 0 0;
@@ -939,13 +973,12 @@ textarea {
   }
   .intro__offer {
     max-width: 650px;
-    margin: 0;
-    margin-bottom: auto;
   }
   .intro__title {
     font-size: 49px;
   }
   .intro__subtitle {
+    max-width: 430px;
     margin: 16px 0 0 0;
     font-size: 19px;
   }
@@ -1064,22 +1097,8 @@ textarea {
   .order__label {
     font-size: 19px;
   }
-  .order__phone {
-    margin: 14px 0 0 0;
-    font-size: 36px;
-  }
-  .order__phone:after {
-    bottom: 4px;
-  }
   .order__form-order {
     margin: 20px 0 0 0;
-  }
-  .input {
-    margin: 8px 0 0 0;
-    height: 60px;
-    padding: 17px 15px 18px 15px;
-    font-size: 15px;
-    border: 1px solid #ccc;
   }
   .form-order {
     max-width: 388px;
@@ -1128,7 +1147,6 @@ textarea {
     max-width: 390px;
   }
   .title--narrow::before {
-    content: '';
     bottom: 50px;
   }
   .subtitle {
@@ -1144,8 +1162,47 @@ textarea {
     min-height: 55px;
     padding: 17px 15px 18px 15px;
   }
-  .header__phone:after {
+  .header__inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .logo {
+    padding: 0 10px 0 0;
+  }
+  .phones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phones__item {
+    margin: 10px 0 0 0;
+  }
+  .phones__link {
+    margin: 0 0 1px 10px;
+  }
+  .phones__link:after {
     display: none;
+  }
+  .phones--order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phones--order .phones__item {
+    margin: 15px 0 0 0;
+  }
+  .phones--order .phones__link {
+    font-size: 24px;
+  }
+  .phones--order .phones__icon {
+    width: 32px;
+    height: 32px;
+  }
+  .phones--order .phones__link {
+    margin: 0 0 1px 10px;
   }
   .intro__offer {
     width: 100%;
@@ -1157,15 +1214,15 @@ textarea {
   .advantages {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin: 0;
   }
   .advantages__item {
-    padding: 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 300px;
             flex: 0 1 300px;
+    padding: 0;
   }
   .advantages__item:nth-child(n+3) {
     margin: 35px 0 0 0;
@@ -1178,7 +1235,7 @@ textarea {
     font-size: 21px;
   }
   .advantages__title {
-    margin: 0 0 0 0;
+    margin: 0;
     font-size: 24px;
   }
   .services__title {
@@ -1264,13 +1321,6 @@ textarea {
   .order__label {
     font-size: 17px;
   }
-  .order__phone {
-    margin: 14px 0 0 0;
-    font-size: 30px;
-  }
-  .order__phone:after {
-    display: none;
-  }
   .form-order {
     max-width: 324px;
   }
@@ -1283,7 +1333,7 @@ textarea {
             justify-content: flex-end;
   }
   .footer__copyright {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -1299,8 +1349,8 @@ textarea {
     bottom: 5px;
   }
   .title--narrow {
-    font-size: 22px;
     max-width: 100%;
+    font-size: 22px;
   }
   .title--narrow::before {
     display: none;
@@ -1316,12 +1366,6 @@ textarea {
   .subtitle--narrow {
     max-width: 100%;
   }
-  .header__phone {
-    font-size: 18px;
-  }
-  .header__btn {
-    display: none;
-  }
   .logo__icon {
     width: 82px;
     height: 35px;
@@ -1329,33 +1373,26 @@ textarea {
   .logo__text {
     margin: 0 0 0 15px;
   }
-  .logo__title {
-    font-size: 18px;
-  }
-  .logo__subtitle {
-    display: none;
-  }
   .intro {
     min-height: auto;
   }
   .intro__inner {
-    padding: 0 0 0 0;
-    position: static;
     height: auto;
+    padding: 0;
+    position: static;
   }
   .intro__title {
     font-size: 36px;
   }
   .intro__subtitle {
-    max-width: 400px;
+    max-width: 470px;
     margin: 20px 0 0 0;
-    font-size: 23px;
+    font-size: 21px;
   }
   .intro__img {
+    width: 100%;
     padding: 30px 0 0 0;
     position: static;
-    width: 100%;
-    z-index: -1;
   }
   .advantages__item {
     -webkit-box-flex: 0;
@@ -1408,8 +1445,8 @@ textarea {
     padding-bottom: 0;
   }
   .questions__inner {
-    position: static;
     margin: 30px 0 0 0;
+    position: static;
   }
   .questions__info {
     max-width: 100%;
@@ -1430,15 +1467,14 @@ textarea {
   }
   .questions__img {
     display: block;
-    margin: 30px 0 0 0;
-    position: static;
     width: 100%;
     height: auto;
+    margin: 30px 0 0 0;
+    position: static;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   .order__inner {
-    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1449,24 +1485,22 @@ textarea {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    position: static;
   }
   .order__column {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
-  .order__contact {
-    text-align: center;
-  }
   .order__img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     display: block;
-    margin: 30px 0 0 0;
-    position: static;
     width: 100%;
     height: auto;
+    margin: 30px 0 0 0;
+    position: static;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -1474,17 +1508,17 @@ textarea {
     max-width: 100%;
   }
   .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .footer__item {
-    padding: 10px 10px 10px 10px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    padding: 10px 10px 10px 10px;
   }
   .footer__item--1 {
     -webkit-box-ordinal-group: 3;
@@ -1501,7 +1535,7 @@ textarea {
   }
 }
 
-@media (max-width: 539px) and (min-width: 320px) {
+@media (max-width: 539px) {
   .section {
     padding: 50px 0 60px 0;
   }
@@ -1528,8 +1562,8 @@ textarea {
     font-size: 18px;
   }
   .btn--intro {
-    min-height: 60px;
     width: 100%;
+    min-height: 60px;
   }
   .btn--card {
     min-height: 60px;
@@ -1545,26 +1579,8 @@ textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .header__logo {
-    padding: 5px 0 5px 0;
-  }
-  .header__contacts {
-    padding: 5px 0 5px 0;
-  }
-  .header__phone {
-    font-size: 26px;
-  }
-  .header__phone::after {
-    display: block;
-    width: 100%;
-    height: 6px;
-    bottom: 6px;
-  }
   .logo__title {
-    font-size: 18px;
-  }
-  .logo__subtitle {
-    display: block;
+    font-size: 20px;
   }
   .intro {
     padding: 50px 0 60px 0;
@@ -1573,7 +1589,8 @@ textarea {
     font-size: 40px;
   }
   .intro__subtitle {
-    font-size: 20px;
+    max-width: 390px;
+    font-size: 19px;
   }
   .intro__img {
     display: none;
@@ -1603,10 +1620,10 @@ textarea {
     font-size: 20px;
   }
   .services__column {
-    padding: 0 5px 0 5px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    padding: 0 5px 0 5px;
   }
   .services__column:nth-child(n+2) {
     margin: 15px 0 0 0;
@@ -1618,8 +1635,8 @@ textarea {
     padding: 20px 20px 15px 20px;
   }
   .card__title {
-    font-size: 26px;
     min-height: auto;
+    font-size: 26px;
   }
   .card__descr {
     margin: 10px 0 0 0;
@@ -1633,8 +1650,8 @@ textarea {
             flex: 0 1 120px;
     padding: 0 3px 0 3px;
   }
-  .slider-small .slick-current img {
-    border: 2px solid #F4BB26;
+  .questions {
+    padding-bottom: 0;
   }
   .questions__info {
     max-width: auto;
@@ -1660,7 +1677,7 @@ textarea {
     margin: 5px 0 0 0;
     font-size: 17px;
   }
-  .order__phone {
-    font-size: 26px;
+  .order__label {
+    font-size: 16px;
   }
 }

@@ -6,13 +6,15 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
+
         margin: 70px -15px 0 -15px;
     }
 
     &__column {
-        padding: 0 15px 0 15px;
-        flex: 0 0 33.3333%;
         display: flex;
+        flex: 0 0 33.3333%;
+        
+        padding: 0 15px 0 15px;
         
         &:nth-child(n+4) {
             margin: 40px 0 0 0;

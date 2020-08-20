@@ -1,6 +1,6 @@
 // @media (max-width: 539px) and (min-width: 320px)
 
-@media (max-width: 539px) and (min-width: 320px) {
+@media (max-width: 539px) {
 
     .section {
         padding: 50px 0 60px 0;
@@ -35,8 +35,8 @@
         font-size: 18px;
 
         &--intro {
+            width: 100%;
             min-height: 60px;
-            width: 100%;;
         }
 
         &--card {
@@ -55,35 +55,12 @@
         &__inner {
             flex-wrap: wrap;
         }
-        
-        &__logo {
-            padding: 5px 0 5px 0;
-        }
-
-        &__contacts {
-            padding: 5px 0 5px 0;
-        }
-
-        &__phone {
-            font-size: 26px;
-
-            &::after {
-                display: block;
-                width: 100%;
-                height: 6px;
-                bottom: 6px;
-            }
-        }
     }
 
     .logo {
 
         &__title {
-            font-size: 18px;
-        }
-
-        &__subtitle {
-            display: block;
+            font-size: 20px;
         }
     }
 
@@ -95,7 +72,8 @@
         }
 
         &__subtitle {
-            font-size: 20px;
+            max-width: 390px;
+            font-size: 19px;
         }
 
         &__img {
@@ -104,11 +82,10 @@
     }
 
     .advantages {
-        flex-direction: column
-        ;
+        flex-direction: column;
+
         &__item {
             flex: 1 1 auto;
-
 
             &:nth-child(n+2) {
                 margin: 30px 0 0 0;
@@ -131,8 +108,8 @@
 
     .services {
         &__column {
-            padding: 0 5px 0 5px;
             flex: 1 1 auto;
+            padding: 0 5px 0 5px;
             
             &:nth-child(n+2) {
                 margin: 15px 0 0 0;
@@ -148,8 +125,8 @@
         }
 
         &__title {
-            font-size: 26px;
             min-height: auto;
+            font-size: 26px;
         }
 
         &__descr {
@@ -167,19 +144,11 @@
             flex: 0 1 120px;
             padding: 0 3px 0 3px;
         }
-
-        .slick {
-
-            &-current {
-                img {
-                    border: 2px solid $yellow;
-                }
-            }
-        }
     }
 
     .questions {
-
+        padding-bottom: 0;
+        
         &__info {
             max-width: auto;
         }
@@ -210,8 +179,8 @@
 
     .order {
 
-        &__phone {
-            font-size: 26px;
+        &__label {
+            font-size: 16px;
         }
     }
 }

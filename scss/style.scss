@@ -1,13 +1,12 @@
 @import "base/vars";
 @import "base/mixins";
-@import "base/helpers";
-// @import "base/fonts";
 
 body {
+    margin: 0;
+
     font-family: 'Gotham Pro', sans-serif;
     font-size: 19px;
     line-height: 150%;
-    margin: 0;
 }
 
 *, *:before, *:after {
@@ -30,7 +29,10 @@ p {
     // }
 }
 
-input[type=text], input[type=email], input[type=tel], textarea {
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance:none;
@@ -55,6 +57,7 @@ textarea {
 /* blocks */
 @import "blocks/header";
 @import "blocks/logo";
+@import "blocks/phones";
 @import "blocks/intro";
 @import "blocks/btn";
 @import "blocks/services";

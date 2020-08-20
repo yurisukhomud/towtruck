@@ -1,38 +1,42 @@
 .intro {
-    // position: relative;
     display: flex;
+
     min-height: 770px;
     padding: 100px 0 0 0;
-    background-color: $black;
+
     overflow: hidden;
+
+    background-color: $black;
 
     &__inner {
         height: 100%;
         padding: 0 0 300px 0;
+
         position: relative;
         z-index: 10;
     }
 
     &__offer {
         max-width: 870px;
-        margin: 0;
-        margin-bottom: auto;
     }
 
     &__title {
         @include black;
         font-size: 66px;
         line-height: 130%;
+
         color: $white;
     }
 
     &__subtitle {
+        max-width: 540px;
         margin: 20px 0 0 0;
 
         @include regular;
         font-size: 24px;
         line-height: 150%;
-        color: $gray;
+
+        color: $white;
 
         span {
             @include medium;
@@ -45,10 +49,11 @@
     }
 
     &__img {
-        position: absolute;
         width: 1399px;
         height: auto;
-        left: 15%;
+        
+        position: absolute;
+        left: 10%;
         bottom: 0;
         z-index: -1;
     }

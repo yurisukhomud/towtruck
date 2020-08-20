@@ -15,8 +15,8 @@
         }
 
         &--narrow {
-            font-size: 22px;
             max-width: 100%;
+            font-size: 22px;
     
             &::before {
                 display: none;
@@ -38,15 +38,6 @@
         }
     }
 
-    .header {
-        &__phone {
-            font-size: 18px;
-        }
-        &__btn {
-            display: none;
-        }
-    }
-
     .logo {
         &__icon {
             width: 82px;
@@ -56,23 +47,16 @@
         &__text {
             margin: 0 0 0 15px;
         }
-
-        &__title {
-            font-size: 18px;
-        }
-
-        &__subtitle {
-            display: none;
-        }
     }
 
     .intro {
         min-height: auto;
 
         &__inner {
-            padding: 0 0 0 0;
-            position: static;
             height: auto;
+            padding: 0;
+
+            position: static;
         }
 
         &__title {
@@ -80,16 +64,17 @@
         }
 
         &__subtitle {
-            max-width: 400px;
+            max-width: 470px;
             margin: 20px 0 0 0;
-            font-size: 23px;
+
+            font-size: 21px;
         }
 
         &__img {
+            width: 100%;
+
             padding: 30px 0 0 0;
             position: static;
-            width: 100%;
-            z-index: -1;
         }
     }
 
@@ -167,8 +152,8 @@
         padding-bottom: 0;
 
         &__inner {
-            position: static;
             margin: 30px 0 0 0;
+            position: static;
         }
 
         &__info {
@@ -197,37 +182,39 @@
 
         &__img {
             display: block;
-            margin: 30px 0 0 0;
-            position: static;
             width: 100%;
             height: auto;
+            margin: 30px 0 0 0;
+
+            position: static;
+
             transform: translateY(0);
         }
     }
     
     .order {
         &__inner {
-            position: static;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+
+            position: static;
         }
 
         &__column {
             flex: 1 1 auto;
         }
 
-        &__contact {
-            text-align: center;
-        }
-
         &__img {
             order: 2;
+
             display: block;
-            margin: 30px 0 0 0;
-            position: static;
             width: 100%;
             height: auto;
+            margin: 30px 0 0 0;
+
+            position: static;
+
             transform: translateY(0);
         }
     }
@@ -239,13 +226,13 @@
     .footer {
         
         &__inner {
-            flex: 0 0 auto;
             flex-wrap: wrap;
+            flex: 0 0 auto;
         }
 
         &__item {
-            padding: 10px 10px 10px 10px;
             flex: 1 1 auto;
+            padding: 10px 10px 10px 10px;
 
             &--1 {
                 order: 2;

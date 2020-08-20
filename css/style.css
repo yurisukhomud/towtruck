@@ -1174,7 +1174,7 @@ textarea {
             align-items: flex-start;
   }
   .logo {
-    padding: 0 10px 0 0;
+    padding: 0 10px 10px 0;
   }
   .phones {
     -webkit-box-orient: vertical;

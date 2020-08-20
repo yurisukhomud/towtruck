@@ -18,6 +18,11 @@
         outline: none;
     }
 
+    &:hover {
+        background-color: (darken($yellow, 11%));
+        transition: background-color .2s linear;
+    }
+
     &--intro {
         display: inline-block;
         min-height: 70px;

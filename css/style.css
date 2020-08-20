@@ -284,6 +284,12 @@ textarea {
   outline: none;
 }
 
+.btn:hover {
+  background-color: #d79f0b;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
 .btn--intro {
   display: inline-block;
   min-height: 70px;
